@@ -5,84 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
     <header>
-        <h1 id="title">Pasta Survey Form</h1>
-        <p id="description">The purpose of this survey is to examine what kind of pasta is most popular between the students in order to refine the marketing strategie. This study is being conducted throught the Institute of Gluten. Your participation is entirely voluntary.</p>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nostrum iste est saepe aut dolores, veritatis accusantium ratione voluptatem necessitatibus magni blanditiis minima accusamus pariatur asperiores fugit! Id, harum quidem!</p>
     </header>
     <main>
-        <form id="survey_form">
-            <label for="first_name" id="first_name-label">First name</label>
-            <input id="first_name" type="text" name="firs_name" placeholder="John" required> </input>
-            <label for="last_name" id="last_name-label">Last name</label>
-            <input id="last_name" type="text" name="last_name" placeholder="Smith" required> </input>
-            <br>
-            <label for="email" id="email-label">Email</label>
-            <input id="email" type="email" name="email" placeholder="johnsmith@pasta.com" required> </input>
-            <br>
-            <label for="number" id="number-label">Age</label>
-            <input id="number" type="number" name="number" placeholder="23" min="10" max="100" required> </input>
-            <br>
-            <label for="dropdown" id="degree">Education</label>
-             <select id="dropdown">
-                 <option value="University">University</option>
-                 <option value="College">College</option>
-                 <option value="HighSchool">High School</option>
-                 <option value="ElementarySchool">Elementary School</option>
-             </select>
-             <br>
-            <label for="favourite_types_of_pasta" id="favourite_types_of_pasta"> <b>Favourite types of pasta</b> </label>
-            <br>
-            <input id="favourite_types_of_pasta" type="radio" id="spaghetti" name="pasta" value="spaghetti">
-            <label for="favourite_types_of_pasta">Spaghetti</label>
-            <br>
-            <input id="favourite_types_of_pasta" type="radio" id="fettuccine" name="pasta" value="fettuccine">
-            <label for="favourite_types_of_pasta">Fettuccine</label>
-            <br>
-            <input id="favourite_types_of_pasta" type="radio" id="macaroni" name="pasta" value="macaroni">
-            <label for="favourite_types_of_pasta">Macaroni</label>
-            <br>
-            <input id="favourite_types_of_pasta" type="radio" id="lasagne" name="pasta" value="lasagne">
-            <label for="favourite_types_of_pasta">Lasagne</label>
-            <br>
-            <input id="favourite_types_of_pasta" type="radio" id="ravioli" name="pasta" value="ravioli">
-            <label for="favourite_types_of_pasta">Ravioli</label>
-            <br>
-            <input id="favourite_types_of_pasta" type="radio" id="penne" name="pasta" value="penne">
-            <label for="favourite_types_of_pasta">Penne</label>
-            <br>
-            <input id="favourite_types_of_pasta" type="radio" id="forfalle" name="pasta" value="forfalle">
-            <label for="favourite_types_of_pasta">Forfalle</label>
-            <br>
-            <label for="sauce"> <b>Favourite types of sauce</b> </label>
-            <br>
-            <input id="checkbox" type="checkbox" name="sauce" value="browned_butter_sauce">
-            <label for="checkbox">Browned butter sauce</label>
-            <br>
-            <input id="checkbox" type="checkbox" name="sauce" value="tomato_sauce">
-            <label for="checkbox">Tomato sauce</label>
-            <br>
-            <input id="checkbox" type="checkbox" name="sauce" value="garlic_and_oil_sauce">
-            <label for="checkbox">Garlic and oil sauce</label>
-            <br>
-            <input id="checkbox" type="checkbox" name="sauce" value="cream_sauce">
-            <label for="checkbox">Cream sauce</label>
-            <br>
-            <input id="checkbox" type="checkbox" name="sauce" value="meat_sauce">
-            <label for="checkbox">Meat sauce</label>
-            <br>
-            <label id="textarea"></label> Additional Comments </label>
-            <br>
-            <textarea id="textatea" name="instructions" rows="8" cols="60"></textarea>
-            <br>
-            <input id="submit" type="submit" value="Submit">
-
-        </form>
+        <div class="container">
+            <div class="close">X</div>
+            <form class="form">
+                <div>
+                    <label for="first_name" id="first_name-label">First name</label>
+                    <input id="first_name" type="text" name="firs_name" placeholder="John" required> </input>
+                </div>
+                <div>
+                    <label for="last_name" id="last_name-label">Last name</label>
+                    <input id="last_name" type="text" name="last_name" placeholder="Smith" required> </input>
+                </div>
+                <div>
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email" type="email" name="email" placeholder="johnsmith@pasta.com" required> </input>
+                </div>
+                <div>
+                    <label for="number" id="number-label">Age</label>
+                    <input id="number" type="number" name="number" placeholder="23" min="10" max="100" required> </input>
+                </div>
+                <div>
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email" type="email" name="email" placeholder="johnsmith@pasta.com" required> </input>
+                </div>
+                <div>
+                    <label for="dropdown" id="degree">Education</label>
+                    <select id="dropdown">
+                        <option value="University">University</option>
+                        <option value="College">College</option>
+                        <option value="HighSchool">High School</option>
+                        <option value="ElementarySchool">Elementary School</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="favourite_types_of_pasta" id="favourite_types_of_pasta"> <b>Favourite types of pasta</b> </label>
+                    <input id="favourite_types_of_pasta" type="radio" id="spaghetti" name="pasta" value="spaghetti">
+                    <label for="favourite_types_of_pasta">Spaghetti</label>
+                    <input id="favourite_types_of_pasta" type="radio" id="fettuccine" name="pasta" value="fettuccine">
+                    <label for="favourite_types_of_pasta">Fettuccine</label>
+                    <input id="favourite_types_of_pasta" type="radio" id="macaroni" name="pasta" value="macaroni">
+                    <label for="favourite_types_of_pasta">Macaroni</label>
+                    <input id="favourite_types_of_pasta" type="radio" id="lasagne" name="pasta" value="lasagne">
+                    <label for="favourite_types_of_pasta">Lasagne</label>
+                    <input id="favourite_types_of_pasta" type="radio" id="ravioli" name="pasta" value="ravioli">
+                    <label for="favourite_types_of_pasta">Ravioli</label>
+                    <input id="favourite_types_of_pasta" type="radio" id="penne" name="pasta" value="penne">
+                    <label for="favourite_types_of_pasta">Penne</label>
+                    <input id="favourite_types_of_pasta" type="radio" id="forfalle" name="pasta" value="forfalle">
+                    <label for="favourite_types_of_pasta">Forfalle</label>
+                </div>
+                <div>
+                    <label for="sauce"> <b>Favourite types of sauce</b> </label>
+                    <input id="checkbox" type="checkbox" name="sauce" value="browned_butter_sauce">
+                    <label for="checkbox">Browned butter sauce</label>
+                    <input id="checkbox" type="checkbox" name="sauce" value="tomato_sauce">
+                    <label for="checkbox">Tomato sauce</label>
+                    <input id="checkbox" type="checkbox" name="sauce" value="garlic_and_oil_sauce">
+                    <label for="checkbox">Garlic and oil sauce</label>
+                    <input id="checkbox" type="checkbox" name="sauce" value="cream_sauce">
+                    <label for="checkbox">Cream sauce</label>
+                    <input id="checkbox" type="checkbox" name="sauce" value="meat_sauce">
+                    <label for="checkbox">Meat sauce</label>
+                </div>
+                <div>
+                    <label id="textarea"></label> Additional Comments </label>
+                    <textarea id="textatea" name="instructions" rows="8" cols="60"></textarea>
+                </div>
+                <div>
+                    <input id="submit" type="submit" value="Submit">
+                </div>
+            </form>
     </main>
-    <footer>
-
-    </footer>
 </body>
 </html>
